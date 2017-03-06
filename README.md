@@ -2,9 +2,7 @@
 
 [![Build Status](https://travis-ci.org/lk-geimfari/doggie.svg?branch=master)](https://travis-ci.org/lk-geimfari/doggie)
 [![codecov](https://codecov.io/gh/lk-geimfari/doggie/branch/master/graph/badge.svg)](https://codecov.io/gh/lk-geimfari/doggie)
-[![Hex.pm](https://img.shields.io/hexpm/v/plug.svg)](https://hex.pm/packages/doggie)
-[![GitHub issues](https://img.shields.io/github/issues/lk-geimfari/doggie.svg)](https://github.com/lk-geimfari/doggie/issues)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/lk-geimfari/doggie.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
+[![Hex.pm](https://img.shields.io/hexpm/v/plug.svg)](https://hex.pm/packages/doggie/0.1.0)
 
 <p align="center">
 <a href="https://github.com/lk-geimfari/doggie/">
