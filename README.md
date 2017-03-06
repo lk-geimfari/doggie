@@ -19,13 +19,31 @@
 ## Usage
 Very simple example:
 ```elixir
-def email(address) do
-  case Regex.match?(Doggie.email(), address) do
-    true  -> {:ok, :valid}
-    false -> {:error, :invalid}
-    _ -> {:some_other_stuff}
+defmodule SomeApp do
+
+  import Doggie
+
+  def important_things() do
+    # ...
   end
+
+  def email(address) do
+    case Regex.match?(Doggie.email(), address) do
+      true  -> {:ok, :valid}
+      false -> {:error, :invalid}
+      _ -> {:some_other_stuff}
+    end
+  end
+
 end
+```
+
+```elixir
+iex> SomeApp.email("likid.geimfari@gmail.com")
+{:ok, :valid}
+
+iex> SomeApp.email("likid.geimfari@gmailcom")
+{:error, :invalid}
 ```
 
 ## Installation
