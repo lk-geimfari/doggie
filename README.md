@@ -1,6 +1,7 @@
 # Doggie
 
 [![Build Status](https://travis-ci.org/lk-geimfari/doggie.svg?branch=master)](https://travis-ci.org/lk-geimfari/doggie)
+[![codecov](https://codecov.io/gh/lk-geimfari/doggie/branch/master/graph/badge.svg)](https://codecov.io/gh/lk-geimfari/doggie)
 
 <p align="center">
 <a href="https://github.com/lk-geimfari/doggie/">
