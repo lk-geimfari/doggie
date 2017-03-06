@@ -12,7 +12,13 @@ defmodule Doggie.Mixfile do
      description: "Doggie is a tiny library that provides the most commonly used
      regular expression patterns for Elixir.",
      package: package(),
-     docs: [extras: ["README.md"]]
+     docs: [extras: ["README.md"]],
+     preferred_cli_env: [
+       "coveralls": :test,
+       "coveralls.html": :test,
+       "coveralls.json": :test,
+       ],
+     test_coverage: [tool: ExCoveralls]
    ]
   end
 
@@ -36,7 +42,8 @@ defmodule Doggie.Mixfile do
   defp deps do
     [
       {:earmark, ">= 0.0.0", only: :dev},
-      {:ex_doc, ">= 0.0.0", only: :dev}
+      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:excoveralls, "~> 0.5.7", only: :test}
     ]
   end
 
