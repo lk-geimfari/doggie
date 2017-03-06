@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/lk-geimfari/doggie.svg?branch=master)](https://travis-ci.org/lk-geimfari/doggie)
 [![codecov](https://codecov.io/gh/lk-geimfari/doggie/branch/master/graph/badge.svg)](https://codecov.io/gh/lk-geimfari/doggie)
-[![Hex.pm](https://img.shields.io/hexpm/v/plug.svg)](https://hex.pm/packages/doggie/0.1.0)
 
 <p align="center">
 <a href="https://github.com/lk-geimfari/doggie/">
