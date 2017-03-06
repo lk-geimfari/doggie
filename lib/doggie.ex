@@ -1,8 +1,9 @@
 defmodule Doggie do
   @moduledoc """
-  Documentation for Doggie.
-  Doggie is a tiny library that provides RegEx patterns. This can be useful if
-  you don't want to write regular expression manually.
+  Doggie is a library that provides the most commonly used regular expression patterns,
+  such as patterns for email, ip, isbn and etc.
+
+  This library can be useful if you don't want to write regular expression manually.
   """
 
   @doc """
