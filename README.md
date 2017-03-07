@@ -20,12 +20,7 @@
 Very simple example:
 ```elixir
 defmodule SomeApp do
-
   import Doggie
-
-  def important_things() do
-    # ...
-  end
 
   def email(address) do
     case Regex.match?(Doggie.email(), address) do
