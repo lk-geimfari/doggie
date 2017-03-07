@@ -18,9 +18,28 @@
 
 ## Usage
 Very simple example:
+
 ```elixir
 defmodule SomeApp do
-  import Doggie
+
+  def send_email(email) do
+    case Doggie.is_email(email)  do
+      true ->
+        send_email(email)
+      false ->
+        {:error, :invalid}
+      _ ->
+        :other_stuff
+    end
+  end
+
+end
+
+```
+Or if you need you can use just pattern:
+
+```elixir
+defmodule SomeApp do
 
   def email(address) do
     case Regex.match?(Doggie.email(), address) do
