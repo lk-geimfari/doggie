@@ -23,7 +23,7 @@ Very simple example:
 defmodule SomeApp do
 
   def send_email(email) do
-    case Doggie.is_email(email)  do
+    case Doggie.is_email(email) do
       true ->
         send_email(email)
       false ->
@@ -36,28 +36,14 @@ defmodule SomeApp do
 end
 
 ```
-Or if you need you can use just pattern:
 
+Example:
 ```elixir
-defmodule SomeApp do
-
-  def email(address) do
-    case Regex.match?(Doggie.email(), address) do
-      true  -> {:ok, :valid}
-      false -> {:error, :invalid}
-      _ -> {:some_other_stuff}
-    end
-  end
-
-end
-```
-
-```elixir
-iex> SomeApp.email("likid.geimfari@gmail.com")
-{:ok, :valid}
+iex> SomeApp.is_email("likid.geimfari@gmail.com")
+true
 
 iex> SomeApp.email("likid.geimfari@gmailcom")
-{:error, :invalid}
+false
 ```
 
 ## Installation
@@ -69,6 +55,9 @@ def deps do
   [{:doggie, "~> 0.1.0"}]
 end
 ```
+
+## Attention
+This is an experimental project and it's mean that we do not guarantee stability. It's created just for fun. Regular expression patterns can matched invalid values, but we will work on it.
 
 ## License
 Doggie is licensed under the MIT License. See [LICENSE](https://github.com/lk-geimfari/doggie/blob/master/LICENSE) for more information.
