@@ -42,7 +42,7 @@ Example:
 iex> SomeApp.is_email("likid.geimfari@gmail.com")
 true
 
-iex> SomeApp.email("likid.geimfari@gmailcom")
+iex> SomeApp.is_email("likid.geimfari@gmailcom")
 false
 ```
 
