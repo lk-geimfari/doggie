@@ -76,6 +76,22 @@ defmodule DoggieTest do
     assert Regex.match?(Doggie.Patterns.zip_code(:by), "123456")
     refute Regex.match?(Doggie.Patterns.zip_code(:by), "123456A")
 
+    assert Regex.match?(Doggie.Patterns.zip_code(:ca), "A1A 1A1")
+    assert Regex.match?(Doggie.Patterns.zip_code(:ca), "A1A1A1")
+    assert Regex.match?(Doggie.Patterns.zip_code(:ca), "H0H0H0")
+    assert Regex.match?(Doggie.Patterns.zip_code(:ca), "A1W1W1")
+    assert Regex.match?(Doggie.Patterns.zip_code(:ca), "A1Z1Z1")
+    refute Regex.match?(Doggie.Patterns.zip_code(:ca), "A1A1A1A")
+    refute Regex.match?(Doggie.Patterns.zip_code(:ca), "1A1A1A")
+    refute Regex.match?(Doggie.Patterns.zip_code(:ca), "W1A1A1")
+    refute Regex.match?(Doggie.Patterns.zip_code(:ca), "Z1A1A1")
+    refute Regex.match?(Doggie.Patterns.zip_code(:ca), "D1D1D1")
+    refute Regex.match?(Doggie.Patterns.zip_code(:ca), "F1F1F1")
+    refute Regex.match?(Doggie.Patterns.zip_code(:ca), "I1I1I1")
+    refute Regex.match?(Doggie.Patterns.zip_code(:ca), "O1O1O1")
+    refute Regex.match?(Doggie.Patterns.zip_code(:ca), "Q1Q1Q1")
+    refute Regex.match?(Doggie.Patterns.zip_code(:ca), "U1U1U1")
+
     assert Regex.match?(Doggie.Patterns.zip_code(:ch), "1234")
     refute Regex.match?(Doggie.Patterns.zip_code(:ch), "1234A")
 

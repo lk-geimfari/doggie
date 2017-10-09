@@ -156,6 +156,7 @@ defmodule Doggie.Patterns do
       :be -> ~r/^\d{4}$/
       :bg -> ~r/^\d{4}$/
       :by -> ~r/^\d{6}$/
+      :ca -> ~r/^[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][ ]?\d[ABCEGHJ-NPRSTV-Z]\d$/
       :ch -> ~r/^\d{4}$/
       :ck -> ~r/^\d{4}$/
       :cl -> ~r/^\d{3}-?\d{4}$/
