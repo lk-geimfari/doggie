@@ -39,10 +39,10 @@ end
 
 Example:
 ```elixir
-iex> SomeApp.is_email("likid.geimfari@gmail.com")
+iex> Doggie.is_email("likid.geimfari@gmail.com")
 true
 
-iex> SomeApp.is_email("likid.geimfari@gmailcom")
+iex> Doggie.is_email("likid.geimfari@gmailcom")
 false
 ```
 
